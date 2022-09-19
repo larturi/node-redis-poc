@@ -7,3 +7,18 @@ services:
       - 6379:6379
     command: redis-server --save 60 1 --requirepass ${REDIS_PASSWORD} --loglevel warning
 
+  redis-commander:
+    container_name: redis-commander
+    hostname: redis-commander
+    image: ghcr.io/joeferner/redis-commander:latest
+    restart: always
+    environment:
+      REDIS_HOSTS: redis
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      HTTP_USER: root
+      HTTP_PASSWORD: root
+    ports:
+    - "8081:8081"
+

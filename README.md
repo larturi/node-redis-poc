@@ -21,7 +21,7 @@ docker-compose up -d
 #### Variables de entorno
 
 ```bash
-Copiar las de .env.template y crear el archivo.env
+Copiarlas de .env.template y crear el archivo.env
 ```
 
 #### Correr aplicación localmente
@@ -29,6 +29,12 @@ Copiar las de .env.template y crear el archivo.env
 ```bash
 npm run dev
 ```
+
+#### Redis Commander para monitoreo
+
+<http://localhost:8081>
+User: root
+Pass: root
 
 ---
 
