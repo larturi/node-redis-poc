@@ -1,6 +1,5 @@
 # Node & Redis PoC
 
----
 
 ### 🚀 Quick start
 
