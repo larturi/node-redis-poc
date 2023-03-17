@@ -1,7 +1,5 @@
 # Node & Redis PoC
 
-## Prueba basica con Redis & Node
-
 ---
 
 ### 🚀 Quick start
